@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'adminlte3angular9';
+
+
+  constructor() {
+    this.initApp(); // Execute something on app's startup
+  }
+
+  initApp(): void {
+    console.log(`=================== Startup Application ===================`);
+  }
+
+
 }
